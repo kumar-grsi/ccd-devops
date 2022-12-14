@@ -1,0 +1,103 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ccd_products",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ccd_product",
+    "MaxGetRowsCount": 500,
+    "Name": "Products",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "ccd_name": "Name",
+      "ccd_price": "Price",
+      "ccd_price_base": "Price (Base)",
+      "ccd_product_AsyncOperations": "System Jobs",
+      "ccd_product_BulkDeleteFailures": "Bulk Delete Failures",
+      "ccd_product_DuplicateBaseRecord": "Duplicate Records (ccd_product_DuplicateBaseRecord)",
+      "ccd_product_DuplicateMatchingRecord": "Duplicate Records (ccd_product_DuplicateMatchingRecord)",
+      "ccd_product_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ccd_product_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ccd_product_ProcessSession": "Process Sessions",
+      "ccd_product_SyncErrors": "Sync Errors",
+      "ccd_productid": "Product",
+      "ccd_productimage": "Product Image",
+      "ccd_productimageid": "ccd_ProductImageId",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Products",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Products (Views)",
+    "Name": "_ccd_product_views",
+    "RelatedEntityName": "Products",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0c29cd6f-92db-4dbd-8110-70050f03f1cf": "Active Products",
+      "2bb604de-606c-4028-be47-e818224dc097": "Product Lookup View",
+      "3477b959-c344-43dc-bafa-f13e427eebd2": "Inactive Products",
+      "42f3dd8f-2f12-4cec-92be-b43325206b7f": "Product Advanced Find View",
+      "e7dfb420-5a00-4d7a-a547-813f0fd8cd37": "Product Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Products)",
+    "Name": "ccd_product_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Products"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Products",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Products)",
+    "Name": "ccd_product_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Products"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Products",
+    "Type": "OptionSetInfo"
+  }
+]

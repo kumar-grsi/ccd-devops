@@ -1,0 +1,123 @@
+cmp_ccd_top_nav As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label3 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(156, 8, 8, 1)
+        Height: =132
+        Size: =13
+        Text: =""
+        Width: =1363
+        ZIndex: =1
+
+    Image3 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Image: =download
+        X: =12
+        Y: =16
+        ZIndex: =2
+
+    Label4 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =37
+        OnSelect: =Navigate('CCD Screen')
+        Size: =16
+        Text: ="Coffee Shops"
+        X: =214
+        Y: =47
+        ZIndex: =3
+
+    Label4_1 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =37
+        OnSelect: =Navigate('Product Screen')
+        Size: =16
+        Text: ="Products"
+        X: =364
+        Y: =47
+        ZIndex: =4
+
+    Label4_2 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =37
+        OnSelect: =
+        Size: =16
+        Text: ="About"
+        X: =502
+        Y: =47
+        ZIndex: =5
+
+    Label4_3 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =37
+        OnSelect: =
+        Size: =16
+        Text: ="Contact"
+        X: =638
+        Y: =47
+        ZIndex: =6
+
+    lbl_user As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =36
+        Text: =Concatenate("Welcome, ",varCurrentUser.FullName)
+        Width: =262
+        X: =1086
+        Y: =11
+        ZIndex: =7
+
+    lbl_date As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =48
+        Size: =12
+        Text: |-
+            =Concatenate("Today is: ", Today()) 
+        Width: =262
+        X: =1086
+        Y: =36
+        ZIndex: =8
+
+    Icon1 As icon.ShoppingCart:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =White
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =48
+        Icon: =Icon.ShoppingCart
+        Width: =54
+        X: =1254
+        Y: =72
+        ZIndex: =9
+
+    lbl_cart_count As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =15
+        Text: =CountRows(ShoppingCart)
+        Width: =40
+        X: =1308
+        Y: =76
+        ZIndex: =10
+

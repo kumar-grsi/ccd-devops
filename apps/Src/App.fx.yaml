@@ -1,0 +1,7 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Clear(ShoppingCart);
+        Set(varCurrentUser, User());
+        Clear(NewCoffeeShop);
+
